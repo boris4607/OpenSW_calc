@@ -34,10 +34,13 @@ namespace 간단한계산기_20162881
 
         private void 영_Click(object sender, EventArgs e)
         {
+            영번();
+        }
+        void 영번()
+        {
             if (label1.Text == "0") label1.Text = "0";
             else label1.Text += "0";
         }
-
         private void 일_Click(object sender, EventArgs e)
         {
             if (label1.Text == "0") label1.Text = "1";
