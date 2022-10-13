@@ -75,7 +75,7 @@ namespace 간단한계산기_20162881
             this.Plusbt.TabIndex = 1;
             this.Plusbt.Text = "+";
             this.Plusbt.UseVisualStyleBackColor = true;
-            this.Plusbt.Click += new System.EventHandler(this.button1_Click);
+            this.Plusbt.Click += new System.EventHandler(this.Plusbt_Click);
             // 
             // Minubt
             // 
@@ -85,6 +85,7 @@ namespace 간단한계산기_20162881
             this.Minubt.TabIndex = 2;
             this.Minubt.Text = "-";
             this.Minubt.UseVisualStyleBackColor = true;
+            this.Minubt.Click += new System.EventHandler(this.Minubt_Click);
             // 
             // Multbt
             // 
@@ -94,6 +95,7 @@ namespace 간단한계산기_20162881
             this.Multbt.TabIndex = 3;
             this.Multbt.Text = "×";
             this.Multbt.UseVisualStyleBackColor = true;
+            this.Multbt.Click += new System.EventHandler(this.Multbt_Click);
             // 
             // Divibt
             // 
@@ -103,6 +105,7 @@ namespace 간단한계산기_20162881
             this.Divibt.TabIndex = 4;
             this.Divibt.Text = "÷";
             this.Divibt.UseVisualStyleBackColor = true;
+            this.Divibt.Click += new System.EventHandler(this.Divibt_Click);
             // 
             // pictureBox1
             // 
@@ -231,6 +234,7 @@ namespace 간단한계산기_20162881
             this.Enterbt.TabIndex = 17;
             this.Enterbt.Text = "Enter";
             this.Enterbt.UseVisualStyleBackColor = true;
+            this.Enterbt.Click += new System.EventHandler(this.Enterbt_Click);
             // 
             // Delbt
             // 

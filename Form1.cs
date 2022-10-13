@@ -31,11 +31,6 @@ namespace 간단한계산기_20162881
             label4.Text = "";
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void 영_Click(object sender, EventArgs e)
         {
             if (label1.Text == "0") label1.Text = "0";
@@ -115,6 +110,35 @@ namespace 간단한계산기_20162881
             label2.Text = "";
             label3.Text = "";
             label4.Text = "";
+        }
+
+        private void Plusbt_Click(object sender, EventArgs e)
+        {
+            label1.Text += "+";
+            라벨한칸올리기();
+        }
+
+        private void Multbt_Click(object sender, EventArgs e)
+        {
+            label1.Text += "×";
+            라벨한칸올리기();
+        }
+
+        private void Minubt_Click(object sender, EventArgs e)
+        {
+            label1.Text += "-";
+            라벨한칸올리기();
+        }
+
+        private void Divibt_Click(object sender, EventArgs e)
+        {
+            label1.Text += "÷";
+            라벨한칸올리기();
+        }
+
+        private void Enterbt_Click(object sender, EventArgs e)
+        {
+            //연산
         }
     }
 }
