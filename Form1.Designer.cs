@@ -245,7 +245,7 @@ namespace 간단한계산기_20162881
             this.Delbt.Name = "Delbt";
             this.Delbt.Size = new System.Drawing.Size(50, 50);
             this.Delbt.TabIndex = 18;
-            this.Delbt.Text = "C";
+            this.Delbt.Text = "CE";
             this.Delbt.UseVisualStyleBackColor = true;
             this.Delbt.Click += new System.EventHandler(this.Delbt_Click);
             // 
@@ -255,7 +255,7 @@ namespace 간단한계산기_20162881
             this.DelAllbt.Name = "DelAllbt";
             this.DelAllbt.Size = new System.Drawing.Size(50, 50);
             this.DelAllbt.TabIndex = 19;
-            this.DelAllbt.Text = "EC";
+            this.DelAllbt.Text = "C";
             this.DelAllbt.UseVisualStyleBackColor = true;
             this.DelAllbt.Click += new System.EventHandler(this.DelAllbt_Click);
             // 
