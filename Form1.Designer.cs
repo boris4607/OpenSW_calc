@@ -61,11 +61,11 @@ namespace 간단한계산기_20162881
             this.label1.Font = new System.Drawing.Font("맑은 고딕", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.Location = new System.Drawing.Point(83, 149);
             this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label1.Size = new System.Drawing.Size(257, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "000,000,000,000";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Plusbt
             // 
@@ -221,6 +221,7 @@ namespace 간단한계산기_20162881
             this.점.TabIndex = 16;
             this.점.Text = ".";
             this.점.UseVisualStyleBackColor = true;
+            this.점.Click += new System.EventHandler(this.점_Click);
             // 
             // Enterbt
             // 
@@ -239,6 +240,7 @@ namespace 간단한계산기_20162881
             this.Delbt.TabIndex = 18;
             this.Delbt.Text = "C";
             this.Delbt.UseVisualStyleBackColor = true;
+            this.Delbt.Click += new System.EventHandler(this.Delbt_Click);
             // 
             // DelAllbt
             // 
@@ -248,45 +250,43 @@ namespace 간단한계산기_20162881
             this.DelAllbt.TabIndex = 19;
             this.DelAllbt.Text = "EC";
             this.DelAllbt.UseVisualStyleBackColor = true;
+            this.DelAllbt.Click += new System.EventHandler(this.DelAllbt_Click);
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.SystemColors.Control;
             this.label2.Font = new System.Drawing.Font("맑은 고딕", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label2.Location = new System.Drawing.Point(83, 104);
             this.label2.Name = "label2";
-            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label2.Size = new System.Drawing.Size(257, 45);
             this.label2.TabIndex = 20;
             this.label2.Text = "000,000,000,000";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.SystemColors.Control;
             this.label3.Font = new System.Drawing.Font("맑은 고딕", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label3.Location = new System.Drawing.Point(83, 59);
             this.label3.Name = "label3";
-            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label3.Size = new System.Drawing.Size(257, 45);
             this.label3.TabIndex = 21;
             this.label3.Text = "000,000,000,000";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label4
             // 
             this.label4.BackColor = System.Drawing.SystemColors.Control;
             this.label4.Font = new System.Drawing.Font("맑은 고딕", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label4.Location = new System.Drawing.Point(83, 14);
             this.label4.Name = "label4";
-            this.label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label4.Size = new System.Drawing.Size(257, 45);
             this.label4.TabIndex = 22;
             this.label4.Text = "000,000,000,000";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Form1
             // 
