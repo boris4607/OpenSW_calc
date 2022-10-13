@@ -12,6 +12,7 @@ namespace 간단한계산기_20162881
 {
     public partial class Form1 : Form
     {
+        static float 계산심도 = 0;
         public Form1()
         {
             InitializeComponent();
@@ -110,35 +111,115 @@ namespace 간단한계산기_20162881
             label2.Text = "";
             label3.Text = "";
             label4.Text = "";
+            계산심도 = 0;
         }
 
         private void Plusbt_Click(object sender, EventArgs e)
         {
+            if (계산심도 == 4) return;
+            else 계산심도++;
             label1.Text += "+";
             라벨한칸올리기();
         }
 
         private void Multbt_Click(object sender, EventArgs e)
         {
+            if (계산심도 == 4) return;
+            else 계산심도++;
             label1.Text += "×";
             라벨한칸올리기();
         }
 
         private void Minubt_Click(object sender, EventArgs e)
         {
+            if (계산심도 == 4) return;
+            else 계산심도++;
             label1.Text += "-";
             라벨한칸올리기();
         }
 
         private void Divibt_Click(object sender, EventArgs e)
         {
+            if (계산심도 == 4) return;
+            else 계산심도++;
             label1.Text += "÷";
             라벨한칸올리기();
         }
 
         private void Enterbt_Click(object sender, EventArgs e)
         {
-            //연산
+            if (계산심도 == 0) return;
+            if (label1.Text.Length < 1) return;
+            float 변수1 = 0; float 변수2 = 0;
+            float 변수3 = 0; float 변수4 = 0;
+            string 연산기호1 = " "; string 연산기호2 = " "; string 연산기호3 = " ";
+            if (label4.Text.Length <= 1) { 변수1 = 0; 연산기호1 = "+"; }
+            else
+            {
+                float.TryParse(label4.Text.Substring(0, label4.Text.Length - 1), out 변수1);
+                연산기호1 = label4.Text.Substring(label4.Text.Length-2,1);
+            }
+            if (label3.Text.Length <= 1) { 변수2 = 0; 연산기호2 = "+"; }
+            else
+            {
+                float.TryParse(label3.Text.Substring(0, label3.Text.Length - 1), out 변수2);
+                연산기호2 = label4.Text.Substring(label3.Text.Length - 2, 1);
+            }
+            if (label2.Text.Length <= 1) { 변수3 = 0; 연산기호3 = "+"; }
+            else
+            {
+                float.TryParse(label2.Text.Substring(0, label2.Text.Length - 1), out 변수3);
+                연산기호3 = label2.Text.Substring(label2.Text.Length-1, 1);
+            }
+            float.TryParse(label1.Text, out 변수4);
+
+            switch (연산기호1) 
+            {
+                case "+": 변수2 = 변수1 + 변수2;
+                    break;
+                case "-": 변수2 = 변수1 - 변수2;
+                    break;
+                case "×": 변수2 = 변수1 * 변수2;
+                    break;
+                case "÷": 변수2 = 변수1 / 변수2;
+                    break;
+                default: break;
+            }
+            switch (연산기호2)
+            {
+                case "+":
+                    변수3 = 변수2 + 변수3;
+                    break;
+                case "-":
+                    변수3 = 변수2 - 변수3;
+                    break;
+                case "×":
+                    변수3 = 변수2 * 변수3;
+                    break;
+                case "÷":
+                    변수3 = 변수2 / 변수3;
+                    break;
+                default: break;
+            }
+            switch (연산기호3)
+            {
+                case "+":
+                    변수4 = 변수3 + 변수4;
+                    break;
+                case "-":
+                    변수4 = 변수3 - 변수4;
+                    break;
+                case "×":
+                    변수4 = 변수3 * 변수4;
+                    break;
+                case "÷":
+                    변수4 = 변수3 / 변수4;
+                    break;
+                default: break;
+            }
+            label4.Text = ""; label3.Text = ""; label2.Text = "";
+            label1.Text = 변수4.ToString();
+            계산심도 = 0;
         }
     }
 }
