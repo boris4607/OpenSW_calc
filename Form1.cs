@@ -117,7 +117,7 @@ namespace 간단한계산기_20162881
 
         private void Plusbt_Click(object sender, EventArgs e)
         {
-            if (계산심도 == 4) return;
+            if (계산심도 == 3) return;
             else 계산심도++;
             label1.Text += "+";
             라벨한칸올리기();
@@ -125,7 +125,7 @@ namespace 간단한계산기_20162881
 
         private void Multbt_Click(object sender, EventArgs e)
         {
-            if (계산심도 == 4) return;
+            if (계산심도 == 3) return;
             else 계산심도++;
             label1.Text += "×";
             라벨한칸올리기();
@@ -133,7 +133,7 @@ namespace 간단한계산기_20162881
 
         private void Minubt_Click(object sender, EventArgs e)
         {
-            if (계산심도 == 4) return;
+            if (계산심도 == 3) return;
             else 계산심도++;
             label1.Text += "-";
             라벨한칸올리기();
@@ -141,7 +141,7 @@ namespace 간단한계산기_20162881
 
         private void Divibt_Click(object sender, EventArgs e)
         {
-            if (계산심도 == 4) return;
+            if (계산심도 == 3) return;
             else 계산심도++;
             label1.Text += "÷";
             라벨한칸올리기();
@@ -224,7 +224,7 @@ namespace 간단한계산기_20162881
         }
         void 계산심도경고() 
         {
-            if (계산심도 == 4) label5.Text = "더 이상 연산을 추가할 수 없습니다.";
+            if (계산심도 == 3) label5.Text = "더 이상 연산을 추가할 수 없습니다.";
         }
         private void Plusbt_MouseEnter(object sender, EventArgs e)
         {
