@@ -46,24 +46,30 @@ namespace 간단한계산기_20162881
             this.팔 = new System.Windows.Forms.Button();
             this.구 = new System.Windows.Forms.Button();
             this.점 = new System.Windows.Forms.Button();
+            this.Enterbt = new System.Windows.Forms.Button();
+            this.Delbt = new System.Windows.Forms.Button();
+            this.DelAllbt = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Font = new System.Drawing.Font("맑은 고딕", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(231, 18);
+            this.label1.Location = new System.Drawing.Point(83, 149);
             this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label1.Size = new System.Drawing.Size(257, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "000,000,000,000";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Plusbt
             // 
-            this.Plusbt.Location = new System.Drawing.Point(386, 92);
+            this.Plusbt.Location = new System.Drawing.Point(239, 270);
             this.Plusbt.Name = "Plusbt";
             this.Plusbt.Size = new System.Drawing.Size(50, 50);
             this.Plusbt.TabIndex = 1;
@@ -73,7 +79,7 @@ namespace 간단한계산기_20162881
             // 
             // Minubt
             // 
-            this.Minubt.Location = new System.Drawing.Point(442, 92);
+            this.Minubt.Location = new System.Drawing.Point(239, 326);
             this.Minubt.Name = "Minubt";
             this.Minubt.Size = new System.Drawing.Size(50, 50);
             this.Minubt.TabIndex = 2;
@@ -82,7 +88,7 @@ namespace 간단한계산기_20162881
             // 
             // Multbt
             // 
-            this.Multbt.Location = new System.Drawing.Point(386, 148);
+            this.Multbt.Location = new System.Drawing.Point(295, 270);
             this.Multbt.Name = "Multbt";
             this.Multbt.Size = new System.Drawing.Size(50, 50);
             this.Multbt.TabIndex = 3;
@@ -91,7 +97,7 @@ namespace 간단한계산기_20162881
             // 
             // Divibt
             // 
-            this.Divibt.Location = new System.Drawing.Point(442, 148);
+            this.Divibt.Location = new System.Drawing.Point(295, 326);
             this.Divibt.Name = "Divibt";
             this.Divibt.Size = new System.Drawing.Size(50, 50);
             this.Divibt.TabIndex = 4;
@@ -103,13 +109,13 @@ namespace 간단한계산기_20162881
             this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(480, 58);
+            this.pictureBox1.Size = new System.Drawing.Size(333, 187);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
             // 영
             // 
-            this.영.Location = new System.Drawing.Point(12, 305);
+            this.영.Location = new System.Drawing.Point(12, 427);
             this.영.Name = "영";
             this.영.Size = new System.Drawing.Size(65, 65);
             this.영.TabIndex = 6;
@@ -118,7 +124,7 @@ namespace 간단한계산기_20162881
             // 
             // 일
             // 
-            this.일.Location = new System.Drawing.Point(12, 234);
+            this.일.Location = new System.Drawing.Point(12, 356);
             this.일.Name = "일";
             this.일.Size = new System.Drawing.Size(65, 65);
             this.일.TabIndex = 7;
@@ -127,7 +133,7 @@ namespace 간단한계산기_20162881
             // 
             // 이
             // 
-            this.이.Location = new System.Drawing.Point(83, 234);
+            this.이.Location = new System.Drawing.Point(83, 356);
             this.이.Name = "이";
             this.이.Size = new System.Drawing.Size(65, 65);
             this.이.TabIndex = 8;
@@ -136,7 +142,7 @@ namespace 간단한계산기_20162881
             // 
             // 삼
             // 
-            this.삼.Location = new System.Drawing.Point(154, 234);
+            this.삼.Location = new System.Drawing.Point(154, 356);
             this.삼.Name = "삼";
             this.삼.Size = new System.Drawing.Size(65, 65);
             this.삼.TabIndex = 9;
@@ -145,7 +151,7 @@ namespace 간단한계산기_20162881
             // 
             // 사
             // 
-            this.사.Location = new System.Drawing.Point(12, 163);
+            this.사.Location = new System.Drawing.Point(12, 285);
             this.사.Name = "사";
             this.사.Size = new System.Drawing.Size(65, 65);
             this.사.TabIndex = 10;
@@ -154,7 +160,7 @@ namespace 간단한계산기_20162881
             // 
             // 오
             // 
-            this.오.Location = new System.Drawing.Point(83, 163);
+            this.오.Location = new System.Drawing.Point(83, 285);
             this.오.Name = "오";
             this.오.Size = new System.Drawing.Size(65, 65);
             this.오.TabIndex = 11;
@@ -163,7 +169,7 @@ namespace 간단한계산기_20162881
             // 
             // 육
             // 
-            this.육.Location = new System.Drawing.Point(154, 163);
+            this.육.Location = new System.Drawing.Point(154, 285);
             this.육.Name = "육";
             this.육.Size = new System.Drawing.Size(65, 65);
             this.육.TabIndex = 12;
@@ -172,7 +178,7 @@ namespace 간단한계산기_20162881
             // 
             // 칠
             // 
-            this.칠.Location = new System.Drawing.Point(12, 92);
+            this.칠.Location = new System.Drawing.Point(12, 214);
             this.칠.Name = "칠";
             this.칠.Size = new System.Drawing.Size(65, 65);
             this.칠.TabIndex = 13;
@@ -181,7 +187,7 @@ namespace 간단한계산기_20162881
             // 
             // 팔
             // 
-            this.팔.Location = new System.Drawing.Point(83, 92);
+            this.팔.Location = new System.Drawing.Point(83, 214);
             this.팔.Name = "팔";
             this.팔.Size = new System.Drawing.Size(65, 65);
             this.팔.TabIndex = 14;
@@ -190,7 +196,7 @@ namespace 간단한계산기_20162881
             // 
             // 구
             // 
-            this.구.Location = new System.Drawing.Point(154, 92);
+            this.구.Location = new System.Drawing.Point(154, 214);
             this.구.Name = "구";
             this.구.Size = new System.Drawing.Size(65, 65);
             this.구.TabIndex = 15;
@@ -199,19 +205,91 @@ namespace 간단한계산기_20162881
             // 
             // 점
             // 
-            this.점.Location = new System.Drawing.Point(154, 305);
+            this.점.Location = new System.Drawing.Point(83, 427);
             this.점.Name = "점";
             this.점.Size = new System.Drawing.Size(65, 65);
             this.점.TabIndex = 16;
             this.점.Text = ".";
             this.점.UseVisualStyleBackColor = true;
             // 
+            // Enterbt
+            // 
+            this.Enterbt.Location = new System.Drawing.Point(154, 427);
+            this.Enterbt.Name = "Enterbt";
+            this.Enterbt.Size = new System.Drawing.Size(65, 65);
+            this.Enterbt.TabIndex = 17;
+            this.Enterbt.Text = "Enter";
+            this.Enterbt.UseVisualStyleBackColor = true;
+            // 
+            // Delbt
+            // 
+            this.Delbt.Location = new System.Drawing.Point(239, 214);
+            this.Delbt.Name = "Delbt";
+            this.Delbt.Size = new System.Drawing.Size(50, 50);
+            this.Delbt.TabIndex = 18;
+            this.Delbt.Text = "C";
+            this.Delbt.UseVisualStyleBackColor = true;
+            // 
+            // DelAllbt
+            // 
+            this.DelAllbt.Location = new System.Drawing.Point(295, 214);
+            this.DelAllbt.Name = "DelAllbt";
+            this.DelAllbt.Size = new System.Drawing.Size(50, 50);
+            this.DelAllbt.TabIndex = 19;
+            this.DelAllbt.Text = "EC";
+            this.DelAllbt.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.SystemColors.Control;
+            this.label2.Font = new System.Drawing.Font("맑은 고딕", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label2.Location = new System.Drawing.Point(83, 104);
+            this.label2.Name = "label2";
+            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label2.Size = new System.Drawing.Size(257, 45);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "000,000,000,000";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.SystemColors.Control;
+            this.label3.Font = new System.Drawing.Font("맑은 고딕", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label3.Location = new System.Drawing.Point(83, 59);
+            this.label3.Name = "label3";
+            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label3.Size = new System.Drawing.Size(257, 45);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "000,000,000,000";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.SystemColors.Control;
+            this.label4.Font = new System.Drawing.Font("맑은 고딕", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label4.Location = new System.Drawing.Point(83, 14);
+            this.label4.Name = "label4";
+            this.label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label4.Size = new System.Drawing.Size(257, 45);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "000,000,000,000";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(504, 554);
+            this.ClientSize = new System.Drawing.Size(356, 554);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.DelAllbt);
+            this.Controls.Add(this.Delbt);
+            this.Controls.Add(this.Enterbt);
             this.Controls.Add(this.점);
             this.Controls.Add(this.구);
             this.Controls.Add(this.팔);
@@ -233,9 +311,9 @@ namespace 간단한계산기_20162881
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "간단한 계산기";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -258,6 +336,12 @@ namespace 간단한계산기_20162881
         private System.Windows.Forms.Button 팔;
         private System.Windows.Forms.Button 구;
         private System.Windows.Forms.Button 점;
+        private System.Windows.Forms.Button Enterbt;
+        private System.Windows.Forms.Button Delbt;
+        private System.Windows.Forms.Button DelAllbt;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 
