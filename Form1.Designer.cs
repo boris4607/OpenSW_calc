@@ -121,6 +121,7 @@ namespace 간단한계산기_20162881
             this.영.TabIndex = 6;
             this.영.Text = "0";
             this.영.UseVisualStyleBackColor = true;
+            this.영.Click += new System.EventHandler(this.영_Click);
             // 
             // 일
             // 
@@ -130,6 +131,7 @@ namespace 간단한계산기_20162881
             this.일.TabIndex = 7;
             this.일.Text = "1";
             this.일.UseVisualStyleBackColor = true;
+            this.일.Click += new System.EventHandler(this.일_Click);
             // 
             // 이
             // 
@@ -139,6 +141,7 @@ namespace 간단한계산기_20162881
             this.이.TabIndex = 8;
             this.이.Text = "2";
             this.이.UseVisualStyleBackColor = true;
+            this.이.Click += new System.EventHandler(this.이_Click);
             // 
             // 삼
             // 
@@ -148,6 +151,7 @@ namespace 간단한계산기_20162881
             this.삼.TabIndex = 9;
             this.삼.Text = "3";
             this.삼.UseVisualStyleBackColor = true;
+            this.삼.Click += new System.EventHandler(this.삼_Click);
             // 
             // 사
             // 
@@ -157,6 +161,7 @@ namespace 간단한계산기_20162881
             this.사.TabIndex = 10;
             this.사.Text = "4";
             this.사.UseVisualStyleBackColor = true;
+            this.사.Click += new System.EventHandler(this.사_Click);
             // 
             // 오
             // 
@@ -166,6 +171,7 @@ namespace 간단한계산기_20162881
             this.오.TabIndex = 11;
             this.오.Text = "5";
             this.오.UseVisualStyleBackColor = true;
+            this.오.Click += new System.EventHandler(this.오_Click);
             // 
             // 육
             // 
@@ -175,6 +181,7 @@ namespace 간단한계산기_20162881
             this.육.TabIndex = 12;
             this.육.Text = "6";
             this.육.UseVisualStyleBackColor = true;
+            this.육.Click += new System.EventHandler(this.육_Click);
             // 
             // 칠
             // 
@@ -184,6 +191,7 @@ namespace 간단한계산기_20162881
             this.칠.TabIndex = 13;
             this.칠.Text = "7";
             this.칠.UseVisualStyleBackColor = true;
+            this.칠.Click += new System.EventHandler(this.칠_Click);
             // 
             // 팔
             // 
@@ -193,6 +201,7 @@ namespace 간단한계산기_20162881
             this.팔.TabIndex = 14;
             this.팔.Text = "8";
             this.팔.UseVisualStyleBackColor = true;
+            this.팔.Click += new System.EventHandler(this.팔_Click);
             // 
             // 구
             // 
@@ -202,6 +211,7 @@ namespace 간단한계산기_20162881
             this.구.TabIndex = 15;
             this.구.Text = "9";
             this.구.UseVisualStyleBackColor = true;
+            this.구.Click += new System.EventHandler(this.구_Click);
             // 
             // 점
             // 
