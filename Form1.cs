@@ -226,5 +226,19 @@ namespace 간단한계산기_20162881
         {
             MessageBox.Show("테스트버전입니다.");
         }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.NumPad0 || e.KeyCode == Keys.D0) 영_Click(sender, e);
+            if (e.KeyCode == Keys.NumPad1 || e.KeyCode == Keys.D1) 일_Click(sender, e);
+            if (e.KeyCode == Keys.NumPad2 || e.KeyCode == Keys.D2) 이_Click(sender, e);
+            if (e.KeyCode == Keys.NumPad3 || e.KeyCode == Keys.D3) 삼_Click(sender, e);
+            if (e.KeyCode == Keys.NumPad4 || e.KeyCode == Keys.D4) 사_Click(sender, e);
+            if (e.KeyCode == Keys.NumPad5 || e.KeyCode == Keys.D5) 오_Click(sender, e);
+            if (e.KeyCode == Keys.NumPad6 || e.KeyCode == Keys.D6) 육_Click(sender, e);
+            if (e.KeyCode == Keys.NumPad7 || e.KeyCode == Keys.D7) 칠_Click(sender, e);
+            if (e.KeyCode == Keys.NumPad8 || e.KeyCode == Keys.D8) 팔_Click(sender, e);
+            if (e.KeyCode == Keys.NumPad9 || e.KeyCode == Keys.D9) 구_Click(sender, e);
+        }
     }
 }
