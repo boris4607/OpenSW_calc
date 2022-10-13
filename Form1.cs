@@ -112,6 +112,7 @@ namespace 간단한계산기_20162881
             label3.Text = "";
             label4.Text = "";
             계산심도 = 0;
+            label5.Text = "";
         }
 
         private void Plusbt_Click(object sender, EventArgs e)
@@ -220,6 +221,14 @@ namespace 간단한계산기_20162881
             label4.Text = ""; label3.Text = ""; label2.Text = "";
             label1.Text = 변수4.ToString();
             계산심도 = 0;
+        }
+        void 계산심도경고() 
+        {
+            if (계산심도 == 4) label5.Text = "더 이상 연산을 추가할 수 없습니다.";
+        }
+        private void Plusbt_MouseEnter(object sender, EventArgs e)
+        {
+            계산심도경고();
         }
     }
 }

@@ -52,6 +52,7 @@ namespace 간단한계산기_20162881
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,6 +77,7 @@ namespace 간단한계산기_20162881
             this.Plusbt.Text = "+";
             this.Plusbt.UseVisualStyleBackColor = true;
             this.Plusbt.Click += new System.EventHandler(this.Plusbt_Click);
+            this.Plusbt.MouseEnter += new System.EventHandler(this.Plusbt_MouseEnter);
             // 
             // Minubt
             // 
@@ -292,12 +294,22 @@ namespace 간단한계산기_20162881
             this.label4.Text = "000,000,000,000";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 524);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(126, 21);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "계산심도 : 9999";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(356, 554);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -328,6 +340,7 @@ namespace 간단한계산기_20162881
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -356,6 +369,7 @@ namespace 간단한계산기_20162881
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
 
