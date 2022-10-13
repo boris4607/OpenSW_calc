@@ -218,7 +218,7 @@ namespace 간단한계산기_20162881
         }
         private void expobt_Click(object sender, EventArgs e)
         {
-            if (계산심도 == 4) return;
+            if (계산심도 == 3) return;
             else 계산심도++;
             label1.Text += "^";
             라벨한칸올리기();
