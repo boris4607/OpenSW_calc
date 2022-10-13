@@ -223,5 +223,10 @@ namespace 간단한계산기_20162881
             label1.Text += "^";
             라벨한칸올리기();
         }
+
+        private void rootbt_Click(object sender, EventArgs e)
+        {
+            label1.Text = Math.Sqrt(double.Parse(label1.Text)).ToString();
+        }
     }
 }
