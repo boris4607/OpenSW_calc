@@ -221,5 +221,10 @@ namespace 간단한계산기_20162881
             label1.Text = 변수4.ToString();
             계산심도 = 0;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("테스트버전입니다.");
+        }
     }
 }
