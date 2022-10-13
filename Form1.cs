@@ -229,18 +229,17 @@ namespace 간단한계산기_20162881
         {
             MessageBox.Show("테스트버전입니다.");
         }
-
-        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            switch (e.KeyCode) 
+            switch (e.KeyChar)
             {
-                case Keys.D0:
-                case Keys.NumPad0:
-                    영_Click(sender, null);
+                case '0':
+                    영번();
                     break;
 
             }
-            if (e.KeyCode == Keys.NumPad0 || e.KeyCode == Keys.D0) 영_Click(sender, e);
+            /*
+            if (e.KeyCode == Keys.NumPad0 || e.KeyCode == Keys.D0) 영번();
             if (e.KeyCode == Keys.NumPad1 || e.KeyCode == Keys.D1) 일_Click(sender, e);
             if (e.KeyCode == Keys.NumPad2 || e.KeyCode == Keys.D2) 이_Click(sender, e);
             if (e.KeyCode == Keys.NumPad3 || e.KeyCode == Keys.D3) 삼_Click(sender, e);
@@ -250,6 +249,7 @@ namespace 간단한계산기_20162881
             if (e.KeyCode == Keys.NumPad7 || e.KeyCode == Keys.D7) 칠_Click(sender, e);
             if (e.KeyCode == Keys.NumPad8 || e.KeyCode == Keys.D8) 팔_Click(sender, e);
             if (e.KeyCode == Keys.NumPad9 || e.KeyCode == Keys.D9) 구_Click(sender, e);
+            */
         }
     }
 }
