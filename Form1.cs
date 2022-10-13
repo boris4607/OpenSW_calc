@@ -173,53 +173,43 @@ namespace 간단한계산기_20162881
             }
             float.TryParse(label1.Text, out 변수4);
 
-            switch (연산기호1) 
-            {
-                case "+": 변수2 = 변수1 + 변수2;
-                    break;
-                case "-": 변수2 = 변수1 - 변수2;
-                    break;
-                case "×": 변수2 = 변수1 * 변수2;
-                    break;
-                case "÷": 변수2 = 변수1 / 변수2;
-                    break;
-                default: break;
-            }
-            switch (연산기호2)
-            {
-                case "+":
-                    변수3 = 변수2 + 변수3;
-                    break;
-                case "-":
-                    변수3 = 변수2 - 변수3;
-                    break;
-                case "×":
-                    변수3 = 변수2 * 변수3;
-                    break;
-                case "÷":
-                    변수3 = 변수2 / 변수3;
-                    break;
-                default: break;
-            }
-            switch (연산기호3)
-            {
-                case "+":
-                    변수4 = 변수3 + 변수4;
-                    break;
-                case "-":
-                    변수4 = 변수3 - 변수4;
-                    break;
-                case "×":
-                    변수4 = 변수3 * 변수4;
-                    break;
-                case "÷":
-                    변수4 = 변수3 / 변수4;
-                    break;
-                default: break;
-            }
+            변수2 = 연산기능(변수1, 변수2, 연산기호1);
+            변수3 = 연산기능(변수2, 변수3, 연산기호2);
+            변수4 = 연산기능(변수3, 변수4, 연산기호3);
+            
             label4.Text = ""; label3.Text = ""; label2.Text = "";
             label1.Text = 변수4.ToString();
             계산심도 = 0;
+        }
+        float 연산기능(float x, float y, string op) 
+        {
+            switch (op)
+            {
+                case "+":
+                    y = x + y;
+                    break;
+                case "-":
+                    y = x - y;
+                    break;
+                case "×":
+                    y = x * y;
+                    break;
+                case "÷":
+                    y = x / y;
+                    break;
+                case "^" :
+                    y = (float)Math.Pow(x, y);
+                    break;
+                default: break;
+            }
+            return y;
+        }
+        private void expobt_Click(object sender, EventArgs e)
+        {
+            if (계산심도 == 4) return;
+            else 계산심도++;
+            label1.Text += "^";
+            라벨한칸올리기();
         }
     }
 }

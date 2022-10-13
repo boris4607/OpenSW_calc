@@ -52,6 +52,7 @@ namespace 간단한계산기_20162881
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.expobt = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -292,12 +293,23 @@ namespace 간단한계산기_20162881
             this.label4.Text = "000,000,000,000";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // expobt
+            // 
+            this.expobt.Location = new System.Drawing.Point(239, 382);
+            this.expobt.Name = "expobt";
+            this.expobt.Size = new System.Drawing.Size(50, 50);
+            this.expobt.TabIndex = 23;
+            this.expobt.Text = "x^y";
+            this.expobt.UseVisualStyleBackColor = true;
+            this.expobt.Click += new System.EventHandler(this.expobt_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(356, 554);
+            this.Controls.Add(this.expobt);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -356,6 +368,7 @@ namespace 간단한계산기_20162881
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button expobt;
     }
 }
 
