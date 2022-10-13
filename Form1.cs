@@ -229,6 +229,14 @@ namespace 간단한계산기_20162881
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
+            switch (e.KeyCode) 
+            {
+                case Keys.D0:
+                case Keys.NumPad0:
+                    영_Click(sender, null);
+                    break;
+
+            }
             if (e.KeyCode == Keys.NumPad0 || e.KeyCode == Keys.D0) 영_Click(sender, e);
             if (e.KeyCode == Keys.NumPad1 || e.KeyCode == Keys.D1) 일_Click(sender, e);
             if (e.KeyCode == Keys.NumPad2 || e.KeyCode == Keys.D2) 이_Click(sender, e);
