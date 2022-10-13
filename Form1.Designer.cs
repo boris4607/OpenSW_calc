@@ -54,6 +54,7 @@ namespace 간단한계산기_20162881
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.expobt = new System.Windows.Forms.Button();
+            this.rootbt = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -245,7 +246,7 @@ namespace 간단한계산기_20162881
             this.Delbt.Name = "Delbt";
             this.Delbt.Size = new System.Drawing.Size(50, 50);
             this.Delbt.TabIndex = 18;
-            this.Delbt.Text = "C";
+            this.Delbt.Text = "CE";
             this.Delbt.UseVisualStyleBackColor = true;
             this.Delbt.Click += new System.EventHandler(this.Delbt_Click);
             // 
@@ -255,7 +256,7 @@ namespace 간단한계산기_20162881
             this.DelAllbt.Name = "DelAllbt";
             this.DelAllbt.Size = new System.Drawing.Size(50, 50);
             this.DelAllbt.TabIndex = 19;
-            this.DelAllbt.Text = "EC";
+            this.DelAllbt.Text = "C";
             this.DelAllbt.UseVisualStyleBackColor = true;
             this.DelAllbt.Click += new System.EventHandler(this.DelAllbt_Click);
             // 
@@ -314,12 +315,23 @@ namespace 간단한계산기_20162881
             this.expobt.UseVisualStyleBackColor = true;
             this.expobt.Click += new System.EventHandler(this.expobt_Click);
             // 
+            // rootbt
+            // 
+            this.rootbt.Location = new System.Drawing.Point(295, 382);
+            this.rootbt.Name = "rootbt";
+            this.rootbt.Size = new System.Drawing.Size(50, 50);
+            this.rootbt.TabIndex = 25;
+            this.rootbt.Text = "root";
+            this.rootbt.UseVisualStyleBackColor = true;
+            this.rootbt.Click += new System.EventHandler(this.rootbt_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(356, 554);
+            this.Controls.Add(this.rootbt);
             this.Controls.Add(this.expobt);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -383,6 +395,7 @@ namespace 간단한계산기_20162881
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button expobt;
+        private System.Windows.Forms.Button rootbt;
     }
 }
 
