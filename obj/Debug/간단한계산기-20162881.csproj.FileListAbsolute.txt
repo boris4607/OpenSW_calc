@@ -1,0 +1,10 @@
+C:\Users\JIHO\source\repos\간단한계산기-20162881\bin\Debug\간단한계산기-20162881.exe.config
+C:\Users\JIHO\source\repos\간단한계산기-20162881\bin\Debug\간단한계산기-20162881.exe
+C:\Users\JIHO\source\repos\간단한계산기-20162881\bin\Debug\간단한계산기-20162881.pdb
+C:\Users\JIHO\source\repos\간단한계산기-20162881\obj\Debug\간단한계산기-20162881.csproj.AssemblyReference.cache
+C:\Users\JIHO\source\repos\간단한계산기-20162881\obj\Debug\간단한계산기_20162881.Form1.resources
+C:\Users\JIHO\source\repos\간단한계산기-20162881\obj\Debug\간단한계산기_20162881.Properties.Resources.resources
+C:\Users\JIHO\source\repos\간단한계산기-20162881\obj\Debug\간단한계산기-20162881.csproj.GenerateResource.cache
+C:\Users\JIHO\source\repos\간단한계산기-20162881\obj\Debug\간단한계산기-20162881.csproj.CoreCompileInputs.cache
+C:\Users\JIHO\source\repos\간단한계산기-20162881\obj\Debug\간단한계산기-20162881.exe
+C:\Users\JIHO\source\repos\간단한계산기-20162881\obj\Debug\간단한계산기-20162881.pdb
